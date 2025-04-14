@@ -16,7 +16,7 @@ $stmt->execute([$username]);
 $user = $stmt->fetch();
 
 if ($user && $user['password'] === $password) {
-    echo json_encode(["success" => true, "message" => "Login successfulllllll"]);
+    echo json_encode(["success" => true, "message" => "Login successfulllll"]);
 } else {
     echo json_encode(["success" => false, "message" => "Invalid credentials"]);
 }
