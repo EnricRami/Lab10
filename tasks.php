@@ -40,7 +40,7 @@ switch ($method) {
         }
         $stmt = $pdo->prepare("DELETE FROM tasks WHERE id = ?");
         $stmt->execute([$data['id']]);
-        echo json_encode(["success" => true, "message" => "Task deleted"]);
+        echo json_encode(["success" => true, "message" => "Task is deleted"]);
         break;
     default:
         echo json_encode(["success" => false, "message" => "Invalid request method"]);
